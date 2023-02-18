@@ -55,13 +55,43 @@
                     <p class="lead">Coming to you in 2024. <span class="text-info">(Possibly Sooner!)</span></p> 
                     <p>Configuring an astronomy setup will never be the same again, with a telescope configurator, forums, weather tools, buy/sell/trade and more, coming in 2024.</p>
                     
-                    <p class="mt-4 pt-4 mb-1">Sign up to be notified!</p>
-                    <form class="">
-                        <input class="glass form-control" placeholder="john.doe@web.com" type="email"/>
-                        <div class="w-100 d-flex justify-content-center">
-                            <button   button class="mt-3 btn btn-outline-warning pull-right" type="submit">Submit</button>
+                    <form onsubmit="sendContact(event)">
+                        <div class="mb-3">
+                          <label for="emailInput" class="form-label">Sign up to be notified!</label>
+                          <input type="email" class="form-control glass" placeholder="john.doe@gmail.com" id="emailInput">
                         </div>
-                    </form>
+                        <div class="w-100 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-outline-warning">Submit</button></div>
+                      </form>
+                      <script>
+                        var signed = false;
+                        async function sendContact(ev) {
+                          ev.preventDefault();
+                          const senderEmail = document
+                            .getElementById('emailInput').value;
+                          const webhookBody = {
+                            content: senderEmail
+                          };
+                          if (!signed) {
+                            const webhookUrl = 'https://discord.com/api/webhooks/1076474264233967728/2F-Qw14wfa7jDJB_8zH4LGMl0uqFYahV_BdO3aNkTyS6R5DhqQxjwuSFMM-ELYp0w7Lm';
+                            const response = await fetch(webhookUrl, {
+                                method: 'POST',
+                                headers: {
+                                'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify(webhookBody),
+                            });
+                            if (response.ok) {
+                                signed = true;
+                                alert("You've successfully signed up! We'll let you know once we're live.");
+                            } else {
+                                alert('There was an error! Try again later!');
+                            }
+                          } else {
+                            alert("You've already signed up.");
+                          }
+                        }
+                      </script>
                 </div>
             </div>
         </div>
