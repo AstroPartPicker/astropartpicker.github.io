@@ -48,6 +48,25 @@
     .cred a {
         color: white;
     }
+    a {
+        color: #c87bff;
+        text-decoration: none;
+        font-weight: 600;
+        text-shadow: black 0 5px 30px;
+    }
+    a:hover {
+        color: #ad39ff;
+    }
+    .form-control::placeholder {
+        color: lightgray !important;
+        transition: all .2s;
+    }
+    .form-control:focus::placeholder {
+        color: gray !important;
+    }
+    .form-control {
+        transition: all .2s;
+    }
 </style>
 
 <body>
@@ -67,7 +86,7 @@
                     
                     <hr/>
                     <p class="lead">Coming to you in 2024. (Possibly Sooner!)</p> 
-                    <p>Configuring an astronomy setup will never be the same again, with a telescope configurator, forums, weather tools, buy/sell/trade and more, coming in 2024.</p>
+                    <p>Configuring an astronomy setup will never be the same again, with a rig builder, forums, various tools and more, coming in 2024.</p>
                     
                     <form onsubmit="sendContact(event)">
                         <div class="mb-3">
@@ -75,7 +94,13 @@
                           <input type="email" class="form-control glass" placeholder="john.doe@gmail.com" id="emailInput">
                         </div>
                         <div class="w-100 d-flex justify-content-center">
-                        <button type="submit" class="btn btn-outline-warning">Submit</button></div>
+                            <button type="submit" class="btn btn-outline-warning">Submit</button>
+                        </div>
+                        <br/>
+                        <p class="text-center m-0">
+                            Want to help contribute? We'd love to hear from you!<br/>
+                            <a href="mailto://Contact@AstroPartPicker.com">Contact@AstroPartPicker.com</a>, or chat to us on Discord!
+                        </p>
                       </form>
                       <script>
                         var signed = false;
