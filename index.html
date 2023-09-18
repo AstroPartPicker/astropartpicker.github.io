@@ -74,11 +74,13 @@
         <div class="row align-self-center w-100">
             <div class="col-8 mx-auto">
                 <div class="mt-4 p-5 glass text-white rounded">
-                    <div class="row justify-content-end">
-                        
+                    <div class="row">
                         <div class="col">
-                            <a href="https://discord.gg/bTE8skXQre">
-                                <img class="dc float-end" src="./discord.png"/>
+                            <a href="https://www.patreon.com/bePatron?u=101440259" target="_blank">
+                                <img class="float-end m-1" src="./patreon.jpg" height="42px" />
+                            </a>
+                            <a href="https://discord.gg/bTE8skXQre" target="_blank">
+                                <img class="float-end m-1" src="./discord.png" height="42px"/>
                             </a>
                         </div>
                         <img src="./Logo/C-APP.svg" class="applogo"/>
@@ -96,6 +98,7 @@
                         <div class="w-100 d-flex justify-content-center">
                             <button type="submit" class="btn btn-outline-warning">Submit</button>
                         </div>
+                        <p id="success" style="display: none;" class="text-center mt-4 fw-bold">Successfully Signed up!</p>
                         <br/>
                         <p class="text-center m-0">
                             Want to help contribute? We'd love to hear from you!<br/>
@@ -122,7 +125,7 @@
                             });
                             if (response.ok) {
                                 signed = true;
-                                alert("You've successfully signed up! We'll let you know once we're live.");
+                                document.getElementById("success").style.display = "block";
                             } else {
                                 alert('There was an error! Try again later!');
                             }
