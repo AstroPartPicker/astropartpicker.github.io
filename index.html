@@ -36,12 +36,11 @@
     
         .glass {
             /* From https://css.glass (Thanks!) */
-            background: rgba(255, 255, 255, 0.12);
-            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(25px);
+            backdrop-filter: blur(55px);
             -webkit-backdrop-filter: blur(25px);
-            border: 1px solid rgba(255, 255, 255, 0.14);
         }
     
         .dc {
@@ -81,12 +80,20 @@
         }
     
         .form-control:focus::placeholder {
-            color: gray !important;
+            color: lightgray !important;
         }
     
         .form-control {
             transition: all .2s;
+            color: white;
         }
+        .form-control:focus {
+            color: white;
+            background-color: rgba(255,255,255,0.2);
+            border-color: #ad39ff;
+            outline: 0;
+        }
+        
     </style>
 </head>
 
@@ -96,12 +103,9 @@
     <div class="container d-flex h-100">
         <div class="row align-self-center w-100">
             <div class="col-8 mx-auto">
-                <div class="mt-4 p-5 glass text-white rounded">
+                <div class="mt-4 p-5 glass text-white" style="border-radius: 20px">
                     <div class="row">
                         <div class="col">
-                            <a href="https://www.patreon.com/bePatron?u=101440259" target="_blank">
-                                <img class="float-end m-1" src="./patreon.jpg" height="42px" />
-                            </a>
                             <a href="https://discord.gg/bTE8skXQre" target="_blank">
                                 <img class="float-end m-1" src="./discord.png" height="42px"/>
                             </a>
@@ -121,7 +125,7 @@
                         <div class="w-100 d-flex justify-content-center">
                             <button type="submit" class="btn btn-outline-warning">Submit</button>
                         </div>
-                        <p id="success" style="display: none;" class="text-center mt-4 fw-bold">Successfully Signed up!</p>
+                        <p id="success" style="display: none;" class="text-center mt-4 fw-bold">Success! We'll let you know once we start going live!</p>
                         <br/>
                         <p class="text-center m-0">
                             Want to help contribute? We'd love to hear from you!<br/>
