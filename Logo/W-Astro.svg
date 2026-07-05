@@ -12,6 +12,10 @@
         font-variation-settings: 'wght' 400, 'wdth' 100;
       }
 
+      .cls-2 {
+        stroke-width: 0px;
+      }
+
       .cls-4 {
         letter-spacing: 0em;
       }
