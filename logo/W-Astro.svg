@@ -4,24 +4,10 @@
     <style>
       .cls-1, .cls-2 {
         fill: #fff;
-      }
-
-      .cls-1, .cls-3 {
         font-family: Bahnschrift, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         font-size: 201.72px;
         font-variation-settings: 'wght' 400, 'wdth' 100;
-      }
-
-      .cls-2 {
         stroke-width: 0px;
-      }
-
-      .cls-4 {
-        letter-spacing: 0em;
-      }
-
-      .cls-3 {
-        fill: #231f20;
       }
     </style>
   </defs>
@@ -32,8 +18,7 @@
       <path class="cls-2" d="m96.5,72.7c-4.83,4.31-9.99,8.6-15.41,12.8l-16.25-47.29-22.53,65.59s-4.27,12.43-4.67,13.58l-1.96,5.7-2.49,7.25-1.5,4.37-6.9,20.08H2.93l7.97-21.62,1.4-3.8,1.45-3.94,1.59-4.32L56.19,10.28h17.3l23.01,62.42Z"/>
     </g>
     <g>
-      <text class="cls-3" transform="translate(132.64 154.78)"><tspan x="0" y="0">st</tspan><tspan class="cls-4" x="170.39" y="0">r</tspan><tspan x="254.51" y="0">o</tspan></text>
-      <text class="cls-1" transform="translate(132.64 154.78)"><tspan x="0" y="0">st</tspan><tspan class="cls-4" x="170.39" y="0">r</tspan><tspan x="254.51" y="0">o</tspan></text>
+      <text class="cls-1" transform="translate(132.64 154.78)">stro</text>
     </g>
   </g>
 </svg>
