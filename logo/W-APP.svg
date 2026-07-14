@@ -4,35 +4,17 @@
     <style>
       .cls-1, .cls-2, .cls-3 {
         fill: #fff;
-      }
-
-      .cls-1, .cls-4 {
+        stroke-width: 0px;
         font-family: Bahnschrift, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         font-size: 201.72px;
         font-variation-settings: 'wght' 400, 'wdth' 100;
       }
 
-      .cls-5 {
-        letter-spacing: -.02em;
-      }
-
-      .cls-2 {
-        stroke-width: 0px;
-      }
-
-      .cls-6, .cls-3 {
+      .cls-3 {
         font-family: Bahnschrift-Light, Bahnschrift, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         font-size: 38.7px;
         font-variation-settings: 'wght' 300, 'wdth' 100;
         font-weight: 300;
-      }
-
-      .cls-7 {
-        letter-spacing: 0em;
-      }
-
-      .cls-4 {
-        fill: #231f20;
       }
     </style>
   </defs>
@@ -43,12 +25,10 @@
       <path class="cls-2" d="m96.5,71.66c-4.83,4.31-9.99,8.6-15.41,12.8l-16.25-47.29-22.53,65.59s-4.27,12.43-4.67,13.58l-1.96,5.7-2.49,7.25-1.5,4.37-6.9,20.08H2.93l7.97-21.62,1.4-3.8,1.45-3.94,1.59-4.32L56.19,9.24h17.3l23.01,62.42Z"/>
     </g>
     <g>
-      <text class="cls-4" transform="translate(132.64 153.74)"><tspan x="0" y="0">st</tspan><tspan class="cls-7" x="170.39" y="0">r</tspan><tspan x="254.51" y="0">o</tspan></text>
-      <text class="cls-1" transform="translate(132.64 153.74)"><tspan x="0" y="0">st</tspan><tspan class="cls-7" x="170.39" y="0">r</tspan><tspan x="254.51" y="0">o</tspan></text>
+      <text class="cls-1" transform="translate(132.64 153.74)">stro</text>
     </g>
     <g>
-      <text class="cls-6" transform="translate(146.37 190.76)"><tspan class="cls-5" x="0" y="0">P</tspan><tspan x="23.15" y="0">art Picker</tspan></text>
-      <text class="cls-3" transform="translate(146.37 190.76)"><tspan class="cls-5" x="0" y="0">P</tspan><tspan x="23.15" y="0">art Picker</tspan></text>
+      <text class="cls-3" transform="translate(146.37 190.76)">Part Picker</text>
     </g>
   </g>
 </svg>
