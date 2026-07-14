@@ -7,7 +7,7 @@
       }
 
       .cls-1, .cls-3 {
-        font-family: Bahnschrift, Bahnschrift;
+        font-family: Bahnschrift, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         font-size: 201.72px;
         font-variation-settings: 'wght' 400, 'wdth' 100;
       }
